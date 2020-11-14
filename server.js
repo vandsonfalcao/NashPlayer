@@ -16,4 +16,5 @@ app.use("/assets", express.static(path.resolve(__dirname, "assets")))
 app.use("/cover", express.static(path.resolve(__dirname, "tmp", "cover")))
 app.use(routes);
 
-app.listen(3004, () => { console.log("Server is running...") });
+const PORT = process.env.PORT || 3004;
+app.listen(PORT, () => { console.log("Server is running...") });
