@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l||l|NashPlayer - Add Artista</title>
+    <link rel="stylesheet" href="/assets/css/artista.css" />
+</head>
+
+<body>
+    <header>
+        <h3>l||l|NashPlayer</h3>
+        <div>
+            <a href="/">Home</a>
+        </div>
+    </header>
+    <div id="pagina">
+        <div class="cx-geral">
+            <div class="cx-campos">
+                <div class="campo">
+                    <h3 class="artista">Add Artista</h3>
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Imagem</p>
+                </div>
+                <div class="campo">
+                    <img src="/assets/imagens/cover-artista.png" alt="" id="moldura">
+                </div>
+                <div class="campo">
+                    <input type="file" name="cover" id="cover" accept="image/*">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Nome</p>
+                </div>
+                <div class="campo">
+                    <input type="text" maxlength="30" name="name" id="name">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Bio</p>
+                </div>
+                <div class="campo">
+                    <input type="text" name="bio" id="bio">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <input type="button" value="Adicionar" onclick="enviarForm()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/artista.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>

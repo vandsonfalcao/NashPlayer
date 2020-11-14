@@ -1,0 +1,102 @@
+:root {
+  --cor: #40e0d0;
+}
+input {
+  outline: none;
+}
+body {
+  position: fixed;
+  width: 100vw;
+  min-width: 320px;
+  background-color: #1a1b1e;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: rgb(59, 59, 59);
+  border-bottom: 1px solid var(--cor);
+  height: 35px;
+  max-height: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  margin: 0 12px;
+  color: var(--cor);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+header div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor);
+  cursor: pointer;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#pagina {
+  width: 100vw;
+  height: 90vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cx-geral {
+  min-width: 40%;
+  height: 43%;
+  max-height: 350px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px var(--cor);
+  cursor: pointer;
+}
+.card {
+  width: 90%;
+  height: 90%;
+  margin: 10px auto 0 auto;
+}
+.cx-img {
+  height: 80%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.img {
+  margin: 0 auto;
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: solid 1px gray;
+  border-radius: 100%;
+}
+#img-artista {
+  background-image: url(/assets/imagens/cover-artista.png);
+}
+#img-musica {
+  background-image: url(/assets/imagens/cover-musica.png);
+  border-radius: 5px;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+}
+.txt span {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+}

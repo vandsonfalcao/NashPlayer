@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l||l|NashPlayer</title>
+    <link rel="icon" type="image/jpg" href="#" />
+</head>
+<link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body onload="gerarLista()">
+    <input type="file" id="file" accept="audio/mpeg" hidden />
+    <header>
+        <h3>l||l|NashPlayer</h3>
+        <div>
+            <span"><a href="/upload">Upload</a></span>
+        </div>
+    </header>
+    <div id="pagina">
+        <div id="lista"></div>
+    </div>
+    <div id="player">
+        <div id="nav">
+            <audio id="audio" src="" onended="proximaMusica()" ontimeupdate="currentTempo()"
+                onloadedmetadata="configTempo()"></audio>
+            <div class="tl-caixa">
+                <input type="range" id="linhadotempo" min="0" max="0" step="0" value="0" onchange="setCurrentTempo()"
+                    oninput="setCurrentTempo()" />
+            </div>
+            <div class="bt-caixa">
+                <div class="bt" onclick="random()">
+                    <div id="btrandom"></div>
+                </div>
+                <div class="bt" onclick="musicaAnterior()">
+                    <div id="btprev"></div>
+                </div>
+                <div class="bt" onclick="playPause()">
+                    <div id="btplay"></div>
+                </div>
+                <div class="bt" onclick="proximaMusica()">
+                    <div id="btnext"></div>
+                </div>
+                <div class="bt" onclick="repeat()">
+                    <div id="btrepeat"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h4>Artista</h4>
+                <p class="titulo">Titulo</p>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

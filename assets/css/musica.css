@@ -1,0 +1,157 @@
+:root {
+  --cor: #40e0d0;
+}
+input {
+  outline: none;
+}
+body {
+  width: 100vw;
+  min-width: 320px;
+  background-color: #1a1b1e;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+header {
+  flex: 1;
+  background-color: rgb(59, 59, 59);
+  border-bottom: 1px solid var(--cor);
+  height: 35px;
+  max-height: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  margin: 0 12px;
+  color: var(--cor);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+header div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor);
+  cursor: pointer;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#pagina {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cx-geral {
+  min-width: 85%;
+  background-color: rgb(59, 59, 59);
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+.cx-campos {
+  width: 95%;
+  height: auto;
+  margin: 0 auto 10px auto;
+  padding: 0;
+}
+.campo {
+  display: flex;
+  justify-content: center;
+}
+.campo p {
+  line-height: 0;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+}
+input[type="file"] {
+  margin: 0 5px;
+}
+input[type="submit"] {
+  width: 50%;
+  height: 25px;
+  border: none;
+  box-shadow: 1px 1px 1px var(--cor);
+  border-radius: 5px;
+  margin: 15px 0;
+  font-weight: bold;
+  background-color: gray;
+  color: aqua;
+  text-shadow: 1px 1px 2px black;
+}
+#moldura {
+  margin: 5px auto;
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+input[type="button"] {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: var(--cor);
+  font-weight: bold;
+}
+#artistaescolhido {
+  margin-top: 10px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: gray;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: black;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: blue !important;
+  color: #ffffff;
+}

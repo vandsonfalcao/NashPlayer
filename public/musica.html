@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l||l|NashPlayer - Add Musica</title>
+    <link rel="stylesheet" href="/assets/css/musica.css" />
+
+</head>
+
+<body onload="listarArtistas()">
+    <header>
+        <h3>l||l|NashPlayer</h3>
+        <div>
+            <a href="/">Home</a>
+        </div>
+    </header>
+    <div id="pagina">
+        <div class="cx-geral">
+            <div class="cx-campos">
+                <div class="campo">
+                    <h3 class="musica">Add Musica</h3>
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Artista*</p>
+                </div>
+                <div class="campo">
+                    <div class="autocomplete">
+                        <input id="artista" type="text" name="listaartista" placeholder="Escolha um Artista">
+                        <input id="autocomplete-bt" type="button" value="Escolher" onclick="validacao()">
+                    </div>
+                </div>
+                <div class="campo">
+                    <input type="text" name="artista" id="artistaescolhido" disabled style="color: white;">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Nome*</p>
+                </div>
+                <div class="campo">
+                    <input type="text" maxlength="30" name="name" id="name">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Colab</p>
+                </div>
+                <div class="campo">
+                    <input type="text" maxlength="30" name="colab" id="colab">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Género*</p>
+                </div>
+                <div class="campo">
+                    <input type="text" maxlength="30" name="genre" id="genre">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Capa</p>
+                </div>
+                <div class="campo">
+                    <img src="/assets/imagens/cover-musica.png" alt="" id="moldura">
+                </div>
+                <div class="campo">
+                    <input type="file" name="cover" id="cover" accept="image/*">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <p>Musica*</p>
+                </div>
+                <div class="campo">
+                    <input type="file" name="file" id="file" accept="audio/mpeg">
+                </div>
+            </div>
+            <div class="cx-campos">
+                <div class="campo">
+                    <input type="submit" value="Adicionar" onclick="enviarForm()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/musica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>
